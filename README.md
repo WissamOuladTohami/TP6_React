@@ -58,10 +58,10 @@ L'interface a ete personnalisee avec :
 - des boutons vifs et interactifs
 - des emojis pour rendre le TP plus visuel
 
-## Build verifiee
+## Démonstration vidéo :
 
-La compilation de production a ete verifiee avec :
 
-```bash
-npm.cmd run build
-```
+
+https://github.com/user-attachments/assets/3c598f58-37d6-46c7-85b2-177c9f63767b
+
+
