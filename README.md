@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# TP Hooks Avances React ✨
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Petit projet React debutant pour pratiquer plusieurs hooks avec une interface coloree, animee et facile a explorer.
 
-## Available Scripts
+## Apercu
 
-In the project directory, you can run:
+L'application affiche plusieurs mini-demonstrations :
 
-### `npm start`
+- 🧮 `useReducer` avec un compteur
+- 🎯 `useRef` pour mettre le focus sur un champ texte
+- 🔁 `useRef` + `useEffect` pour compter les rendus
+- 📰 `useFetch` pour charger des articles depuis une API
+- ⏱️ `useEffect` avec nettoyage pour un timer
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Lancer le projet
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Installe les dependances puis demarre le serveur de developpement :
 
-### `npm test`
+```bash
+npm install
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+L'application sera visible sur `http://localhost:3000`.
 
-### `npm run build`
+## Scripts utiles
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `npm start` : lance le projet en mode developpement
+- `npm test` : ouvre les tests en mode interactif
+- `npm run build` : genere une version de production
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Structure principale
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `src/App.js` : assemble toutes les demos de hooks
+- `src/Compteur.js` : compteur avec reducer
+- `src/FocusInput.js` : focus programmatique sur un input
+- `src/CompteurRendu.js` : compteur de rendus du composant
+- `src/useFetch.js` : hook personnalise pour recuperer des donnees
+- `src/ListeArticles.js` : affichage des articles recuperes
+- `src/Timer.js` : timer avec nettoyage d'intervalle
 
-### `npm run eject`
+## Objectif pedagogique
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Ce TP aide a comprendre :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- comment centraliser des mises a jour d'etat avec un reducer
+- comment acceder directement a un element du DOM avec une ref
+- comment memoriser une valeur entre les rendus sans re-render
+- comment reutiliser une logique d'appel API dans un hook personnalise
+- comment nettoyer proprement un effet React
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Style ajoute
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+L'interface a ete personnalisee avec :
 
-## Learn More
+- un hero colore
+- des cartes avec animation d'apparition
+- des boutons vifs et interactifs
+- des emojis pour rendre le TP plus visuel
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Build verifiee
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+La compilation de production a ete verifiee avec :
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm.cmd run build
+```
